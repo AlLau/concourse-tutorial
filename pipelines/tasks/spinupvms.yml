@@ -3,14 +3,17 @@ platform: linux
 
 image_resource:
   type: docker-image
-  source: {repository: ubuntu, tag: "16.04"}
+  source:
+    repository: ubuntu
+    tag: "16.04"
 
 inputs:
-  - name: resource-vm
+  - name: concourse-tutorial
     path: .
 
 outputs:
-  - name: list-vm
+  - name: list_of_vms
+    path: .
 
 run:
-  path: pipelines/bin/spinupvms
+  path: concourse-tutorial/pipelines/bin/spinupvms
