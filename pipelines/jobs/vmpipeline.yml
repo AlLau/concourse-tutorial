@@ -10,5 +10,5 @@ jobs:
   public: true
   plan:
   - get: resource-vm
-  -task: spinup-vm
-   file: pipelines/tasks/spinupvm.yml
+  - task: spinup-vm
+    file: pipelines/tasks/spinupvm.yml
