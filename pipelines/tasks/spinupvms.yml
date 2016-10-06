@@ -8,12 +8,12 @@ image_resource:
     tag: "16.04"
 
 inputs:
-  - name: concourse-tutorial
-    path: .
+  - name: pipelines
+    path: vminput
 
 outputs:
   - name: list_of_vms
-    path: .
+    path: vmoutput
 
 run:
-  path: concourse-tutorial/pipelines/bin/spinupvms
+  path: pipelines/bin/spinupvms
