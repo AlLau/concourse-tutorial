@@ -6,10 +6,11 @@ image_resource:
   source: {repository: ubuntu, tag: "16.04"}
 
 inputs:
-- name: inputdir
+  - name: resource-vm
+    path: .
 
 outputs:
-- name: outputdir
+  - name: list-vm
 
 run:
-  path: runscript
+  path: pipelines/bin/spinupvms
