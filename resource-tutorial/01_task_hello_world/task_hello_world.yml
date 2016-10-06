@@ -5,4 +5,4 @@ image_resource:
   source: {repository: ubuntu, tag: "16.04"}
 run:
   path: echo
-  args: [hello world]
+  args: [Hello world]
