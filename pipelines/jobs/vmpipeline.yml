@@ -1,0 +1,14 @@
+---
+resources:
+- name: resource-vm
+  type: git
+  source:
+    uri: https://github.com/AlLau/concourse-tutorial.git
+    
+jobs:
+- name: job-vm
+  public: true
+  plan:
+  - get: resource-vm
+  -task: spinup-vm
+   file: pipelines/tasks/spinupvm.yml
